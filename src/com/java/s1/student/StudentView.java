@@ -7,29 +7,32 @@ public class StudentView {
 	//학생의 모든 정보를 출력하는 메소드
 	public void studentView(Student student) {
 		
-		System.out.println("이름\t번호\t국어\t영어\t수학\t");
-		System.out.println("--------------------------------------");
+		System.out.println("이름\t번호\t국어\t영어\t수학\t총점\t평균\t");
+		System.out.println("-----------------------------------------------------");
 			
 		System.out.print(student.name + "\t");
 		System.out.print(student.num + "\t");
 		System.out.print(student.kor + "\t");
 		System.out.print(student.eng + "\t");
-		System.out.println(student.math + "\t");		
+		System.out.print(student.math + "\t");
+		System.out.print(student.total + "\t");
+		System.out.println(student.avg + "\t");
 		
 	}
 	
 	public void viewStudents(Student [] students) {
 		
-		System.out.println("이름\t번호\t국어\t영어\t수학\t");
-		System.out.println("---------------------------------------");
-		
 		for(int i=0; i<students.length; i++) {
 			
-			System.out.print(students[i].name + "\t");
-			System.out.print(students[i].num + "\t");
-			System.out.print(students[i].kor + "\t");
-			System.out.print(students[i].eng + "\t");
-			System.out.println(students[i].math + "\t");
+			this.studentView(students[i]);
+			
+//			System.out.print(students[i].name + "\t");
+//			System.out.print(students[i].num + "\t");
+//			System.out.print(students[i].kor + "\t");
+//			System.out.print(students[i].eng + "\t");
+//			System.out.println(students[i].math + "\t");
+//			System.out.print(students[i].total + "\t");
+//			System.out.println(students[i].avg + "\t");
 		
 		}
 		

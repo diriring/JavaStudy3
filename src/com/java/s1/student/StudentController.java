@@ -10,6 +10,7 @@ public class StudentController {
 		Scanner sc = new Scanner(System.in);
 		StudentUtil su = new StudentUtil();
 		StudentView sv = new StudentView();
+		su.initUtil();
 		
 		boolean check = true;
 		Student student = null;
