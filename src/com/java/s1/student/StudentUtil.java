@@ -20,7 +20,6 @@ public class StudentUtil {
 		
 		for(int i=0;i<students.length;i++) {
 			if(n == students[i].num) {
-				System.out.println("Find");
 				student = students[i];
 				break;
 			}
