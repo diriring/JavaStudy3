@@ -6,6 +6,10 @@ public class MethodMain {
 
 	public static void main(String[] args) {
 		
+		//1. MainMethod
+		//	1)프로그램 Start와 초기화
+		//	2)Test
+		
 		System.out.println("MainMethod Start");
 		
 		ReturnStudy rs = new ReturnStudy();
