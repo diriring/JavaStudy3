@@ -6,7 +6,30 @@ public class StudentUtil {
 	
 	//학생 객체를 생성하고 정보를 입력 받는 곳
 
-	Scanner sc = new Scanner(System.in);	
+	Scanner sc = new Scanner(System.in);
+	
+	public Student search(Student[] students) {
+		//학생의 번호를 입력
+		//입력 받은 번호와 일치하는 학생을 찾아서
+		//리턴
+		Student student = null;		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("번호를 입력");
+		int n = sc.nextInt();
+		
+		for(int i=0;i<students.length;i++) {
+			if(n == students[i].num) {
+				System.out.println("Find");
+				student = students[i];
+				break;
+			}
+			
+		}
+		
+		return student;	
+		
+	}
 	
 	public Student[] makeStuents() {
 		//학생의 수를 입력받음
