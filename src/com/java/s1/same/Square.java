@@ -4,13 +4,12 @@ public class Square {
 	int width;
 	int height;
 	
-	public boolean same(Square sq1, Square sq2) {
-		boolean check = false;
-		if(sq1.width == sq2.width && sq1.height == sq2.height) {
-			check = true;	
+	public boolean same(Square sq2) {
+		if(this.width == sq2.width && this.height == sq2.height) {
+			return true;	
+		}else {
+			return false;
 		}
-		
-		return check;
 		
 	}
 

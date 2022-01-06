@@ -11,7 +11,8 @@ public class SquareMain {
 		sq2.width = 4;
 		sq2.height = 4;
 		
-		System.out.println(sq1.same(sq1, sq2));
+		System.out.println(sq1.same(sq2));
+		System.out.println(sq2.same(sq1));
 
 	}
 
