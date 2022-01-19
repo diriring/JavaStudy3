@@ -3,6 +3,8 @@ package com.java.s2.constructor;
 public class CarMain {
 
 	public static void main(String[] args) {
+		
+		Car.company = "BMW";
 
 		Car car = new Car();
 		car.info();

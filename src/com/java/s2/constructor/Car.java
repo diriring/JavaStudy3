@@ -3,7 +3,7 @@ package com.java.s2.constructor;
 public class Car {
 	
 	String brand;
-	String company;
+	public static String company = "Kia";
 	String color;
 	int cc;
 	
@@ -36,7 +36,6 @@ public class Car {
 	
 	public Car(String brand, String color, int cc) {
 		
-		this.company = "Kia";
 		this.brand = brand;
 		this.color = color;
 		this.cc = cc;		
@@ -44,7 +43,7 @@ public class Car {
 	
 	//멤버 메서드
 	public void info() {
-		System.out.println(this.company);
+		System.out.println(Car.company);
 		System.out.println(this.brand);
 		System.out.println(this.color);
 		System.out.println(this.cc);
